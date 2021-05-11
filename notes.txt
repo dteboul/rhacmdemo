@@ -1,0 +1,9 @@
+
+If you plan to create a GitHub channel type, you must manually patch the 
+CRD for the Channel CR (channels.app.ibm.com) to include the new GitHub 
+channel type. After you add the channel type, you can create GitHub 
+channels. To add this type, run the following command:
+
+kubectl apply -f https://raw.githubusercontent.com/open-cluster-management/multicloud-operators-channel/master/deploy/crds/apps.open-cluster-management.io_channels_crd.yaml
+
+
